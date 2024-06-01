@@ -6,6 +6,7 @@ import {useIntegration} from '@tma.js/react-router-integration';
 import {Navigate, Route, Router, Routes} from "react-router-dom";
 import {initNavigator} from "@tma.js/sdk-react";
 import {routes} from "./routes.ts";
+import {TonConnectUIProvider} from "@tonconnect/ui-react";
 
 function App() {
     // Create new application navigator and attach it to the browser history, so it could modify
@@ -23,12 +24,14 @@ function App() {
 
     return (
         <>
+            <TonConnectUIProvider manifestUrl="https://paco-enriquez.github.io/nft-tma/tonconnect-manifest.json">
             <Router location={location} navigator={reactNavigator}>
                 <Routes>
                     {routes.map((route) => <Route key={route.path} {...route} />)}
                     <Route path='*' element={<Navigate to='/'/>}/>
                 </Routes>
             </Router>
+            </TonConnectUIProvider>
 
 
         </>

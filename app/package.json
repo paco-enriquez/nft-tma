@@ -10,8 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tma.js/sdk-react": "^2.2.2",
     "@tma.js/react-router-integration": "^4.0.0",
+    "@tma.js/sdk-react": "^2.2.2",
+    "@tonconnect/ui-react": "^2.0.3",
     "i": "^0.3.7",
     "npm": "^10.8.1",
     "react": "^18.2.0",
