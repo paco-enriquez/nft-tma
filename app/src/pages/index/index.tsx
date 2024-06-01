@@ -1,8 +1,8 @@
 import "./index.css"
-import {TonConnectButton, useTonWallet, Wallet} from "@tonconnect/ui-react";
+import {TonConnectButton, useTonWallet} from "@tonconnect/ui-react";
 
 const IndexPage = () => {
-    const wallet: Wallet = useTonWallet();
+    const wallet = useTonWallet();
 
     return (
         <div>
@@ -10,7 +10,7 @@ const IndexPage = () => {
 
             {wallet &&
                 <div>
-                    Wallet connectet
+                    Wallet connected
                 </div>
             }
 
