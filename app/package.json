@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@tma.js/sdk-react": "^2.2.2",
+    "@tma.js/react-router-integration": "^4.0.0",
     "i": "^0.3.7",
     "npm": "^10.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
