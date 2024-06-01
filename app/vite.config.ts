@@ -9,22 +9,22 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/nft-tma/',
+  // base: '/nft-tma/',
   plugins: [
     // Allows using React dev server along with building a React application with Vite.
     // https://npmjs.com/package/@vitejs/plugin-react-swc
     react(),
     // Allows using the compilerOptions.paths property in tsconfig.json.
     // https://www.npmjs.com/package/vite-tsconfig-paths
-    tsconfigPaths(),
+    // tsconfigPaths(),
     // Allows using self-signed certificates to run the dev server using HTTPS.
     // In case, you have a trusted SSL certificate with a key, you could use the server.https
     // option not to proceed to the untrusted SSL certificate warning.
     // https://www.npmjs.com/package/@vitejs/plugin-basic-ssl
-    basicSsl({
+   /* basicSsl({
       certDir: resolve('certificates'),
       domains: ['tma.internal'],
-    }),
+    }),*/
   ],
   server: {
     // Specifying this property makes Vite dev server to start at the specified host. As long
