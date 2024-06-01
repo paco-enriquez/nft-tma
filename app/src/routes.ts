@@ -1,5 +1,6 @@
 import {ComponentType} from "react";
-import IndexPage from "./pages";
+import IndexPage from "./pages/index";
+
 
 interface Route {
     path: string;
